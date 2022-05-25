@@ -1,0 +1,308 @@
+/* Основной DM Sans */
+@import url(https://fonts.googleapis.com/css?family=DM+Sans:regular,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,700&display=wasp);
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*, *::before, *::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus, :active{outline: none;}
+a:focus, a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-size:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a, a:visited{text-decoration: none;}
+ul, li{list-style: none;}
+img{vertical-align: top;}
+
+h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: 400;}
+
+
+/* Обнуление */
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'DM-Sans';
+    min-width: 450px;
+    max-width: 2660px;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+/* ----------------- */
+.wrapper {
+    margin: 0 auto;
+    max-width: 1220px;
+    
+}
+
+.header {
+    margin: 0 10px;
+    height: 119px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.logo__menu {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 40px;
+}
+.menu { 
+}
+.navigation {
+}
+.list {
+    display: flex;
+}
+
+.menu__item {
+    list-style: none;
+}
+
+.menu__item:not(last-child){
+    margin-right: 26px;
+}
+
+
+
+.menu__item a{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 30;
+    color:#222222;
+    text-decoration: none;
+}
+
+.menu__item a:hover{
+    text-decoration: underline;
+}
+
+.header  .donate{
+    margin-left: auto;
+}
+
+.donate {
+    display: flex;
+    align-items: center;
+}
+
+.style__decor {
+    width: 32px;
+    height: 34px;
+    margin-right: 24px;
+}
+
+.button__header {
+    display: flex;
+    border-radius: 10px;
+    background-color: #FF9C08;
+    width: 142px;
+    height: 54px;
+}
+
+.button__header:hover {
+    opacity: .7;
+}
+
+.button__header a{
+    color: #090909;
+    text-decoration: none;
+    padding: 1em 1.813em;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+}
+/* ---------------- */
+/* ------Main------ */
+
+.main {
+    max-height: 869px;
+    height: 100%;
+    background-color: #FEF9F2;
+}
+
+.main__welcome {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #DAD1CA;
+}
+.main__info__welcome {
+}
+
+.decor__line__welcome {
+    width: 140px;
+    height: 4px;
+    background-color: #FF9C08;
+}
+
+.main__title__welcome {
+    width: 603px;
+    height: 160px;
+    color: #090909;
+    font-family: Roboto, sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 16px;
+}
+.main__description__welcome {
+    width: 597px;
+    height: 76px;
+    color: #6E6E6E;
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 43px;
+}
+.main__buttons__welcome {
+    display: flex;
+}
+
+.main__button__donate {
+    display: flex;
+    border-radius: 10px;
+    background-color: #FF9C08;
+    width: 180px;
+    height: 71px;
+    margin-right: 28px;
+}
+
+.main__button__donate a{
+    color: #090909;
+    text-decoration: none;
+    padding: 1.5em 2.459em;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    
+}
+
+.main__button__donate:hover {
+    opacity: .7;
+}
+
+
+.main__button__about {
+    display: flex;
+    width: 225px;
+    height: 73px;
+    
+    
+}
+
+.main__button__about a {
+    padding: 1.5em 2.398em;
+    color: #090909;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: #F0ECE8;
+}
+
+.main__button__about:hover {
+    opacity: .7;
+}
+
+
+.main__image__welcome {
+    display: block;
+    height: 100%;
+}
+/* ---------------- */
+/* Statistic */
+
+.statistic {
+    height: 263px;
+    margin: auto 0;
+    margin-top: 24px;
+
+}
+.statistic__container {
+    display:flex;
+    
+}
+
+.item {
+    margin: auto;
+    padding: 23px;
+}
+
+
+.statistic__one {
+
+}
+
+.statistic__two {
+
+}
+.statistic__three {
+
+}
+.statistic__four {
+
+}
+
+
+.statistic__title {
+    font-family: Roboto;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.statistic__title span {
+    color: #FF9C08;
+}
+
+.statistic__info{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.decor__line__main {
+    width: 1173px;
+    border-top: 1px solid #DAD1CA;
+}
+/* ---------------- */
+/* ----About Us-----*/
+
+/* -----------------*/
+
+
+
+
+
+
