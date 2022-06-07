@@ -1,7 +1,28 @@
-let inputUserName = prompt("Введите ваше имя:");// Имя пользователся
+let inputUserName = prompt("Введите ваше имя:");// Имя пользователя
+// Если пользователь не написал свое имя
+function errorName() {
+    if(inputUserName===""){
+            confirm("Введите свое имя")
+            inputUserName = prompt("Введите ваше имя:");
+    }else if(inputUserName.length < 3){
+        confirm("Слишком короткое имя");
+        inputUserName = prompt("Введите ваше имя:");
+    };
+};
+
+while(inputUserName==="" || inputUserName.length < 3){
+    errorName();
+};
+    
+
 
 let inputUserNum = prompt("Введите число от 1 до 6: "); // Число пользователя
 let intNumber = parseInt(inputUserNum);
+
+while(intNumber > 6 || intNumber===NaN){
+    inputUserNum = prompt("Введите число от 1 до 6: ");
+    intNumber = parseInt(inputUserNum);
+}
 
 let userBalance = document.querySelector(".balance"); // class Баланс
 
@@ -22,6 +43,8 @@ userBalance.innerHTML = "Ваш Баланс: " + balance;
 randomNum.innerHTML = "Выпавшее число: " + startRandomNum;
 
 userNum.innerHTML = "Вашe Число: " + intNumber;
+
+
 
 
 //Работа Казино
@@ -61,10 +84,10 @@ function start() {
 
 };
 // Очистка Счета
-function clea1() {
-    document.innerHTML = confirm("Игрок " + name + " вывел " + balance);
+function giveCash() {
+    document.innerHTML = confirm(inputUserName + " вывел " + balance + "UAH");
     balance = 0;
-    shkrBalance.innerHTML = "Ваш Баланс: " + balance;
+    userBalance .innerHTML = "Ваш Баланс: " + balance;
     console.log("Жми!!!");
 };
 
@@ -86,6 +109,5 @@ function newNum() {
     intNumber = parseInt(inputUserNum);
     userNum.innerHTML = "Вашe Число: " + intNumber;
 };
-
 
 
