@@ -1,5 +1,5 @@
-
 body {
+    height: 100vh;
     max-width: 1620px;
     padding: 0 10px;
     margin: 0 auto;
@@ -22,12 +22,12 @@ body {
     height: 120px;
 }
 
-.header__container  {
+.header__container {
     position: fixed;
-    top:0;
+    top: 0;
     right: 0;
     left: 0;
-    width: 100%; 
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -38,7 +38,7 @@ body {
     justify-content: space-around;
     font-size: 24px;
     /* border: 1px solid black; */
-    padding:15px 15px 0;
+    padding: 15px 15px 0;
     color: #fff;
 }
 
@@ -60,14 +60,30 @@ body {
     margin: 0 5px;
 }
 
-.btn:hover{
-        width: 130px;
-        height: 50px;
-        transition: .2s;
-        background-color: rgb(133, 122, 122);
-        cursor: pointer;
+.btn:hover {
+    width: 130px;
+    height: 50px;
+    transition: .2s;
+    background-color: rgb(133, 122, 122);
+    cursor: pointer;
 }
 
 .btn:active {
     background-color: red;
+}
+
+
+@media(width: 670px) {
+    .main {
+        flex-wrap: wrap;
+        rows: 2;
+    }
+
+    .btn:hover {
+        width: 0px;
+        height: 50px;
+        transition: .2s;
+        background-color: rgb(133, 122, 122);
+        cursor: pointer;
+    }
 }
